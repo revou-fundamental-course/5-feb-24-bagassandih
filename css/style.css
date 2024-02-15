@@ -23,13 +23,13 @@ body {
 .judul {
 	padding: 0;
 	margin: 0;
-	font-size: 24px;
+	font-size: 32px;
 }
 
 .judul-kecil {
 	font-size: 12px;
-	padding-left: 20px;
-	margin: 0;
+	padding-left: 50px;
+	margin: -10px 10px 0px 0px;
 }
 
 .brand:hover,
@@ -105,7 +105,7 @@ button {
 	border-radius: 5px;
 	border: 0px;
 	background-color: #F0A500;
-	color: #1B1A17;
+	color: black;
 	font-weight: bold;
 	transition: background-color 0.5s ease, padding 0.2s ease;
 }
@@ -147,7 +147,7 @@ input[type=number] {
 input[type=number]:focus {
 	background-color: #F0EDCF;
 	outline-width: 0px;
-	padding: 10px 20px;
+	padding: 5px 20px;
 }
 
 .form,
@@ -172,12 +172,17 @@ input[type=number]:focus {
 .section-form-container {
 	width: 420px;
 	margin-top: 30px;
-	padding: 30px;
+	padding: 20px;
 	border: 2px solid #000;
 	background-color: #E45826;
 	border: 0px;
 	border-radius: 20px;
 	font-weight: bold;
+	transition: padding 0.2s ease;
+}
+
+.section-form-container:hover {
+	padding: 25px;
 }
 
 

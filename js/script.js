@@ -80,5 +80,4 @@ function reverse() {
 		labelInputTwo.innerText = 'Fahrenheit(°F)';
 		converter = 'celcius';
 	}
-	konversi();
 };
