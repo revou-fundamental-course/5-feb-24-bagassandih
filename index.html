@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Celcius to Fahrenheit</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<header>
+		<div class="header-container">
+			<div class="brand">
+				<h2 class="judul">RevoU</h2>
+				<h2 class="judul-kecil">Assignment</h2>
+			</div>
+			<div class="box">
+				<ul>
+					<li><a target="_blank"
+						href="https://docs.google.com/document/d/1-sE5ahGJlrmTzjQso7lB2SHCdQ2hwbxt6ksZoVxSzTw/edit#heading=h.gjdgxs">
+						Assignment Detail
+					</a>
+				</li>
+					<li class="dropdown">
+						<a href="#" class="dropbtn">Bagas Arisandi</a>
+						<div class="dropdown-content">
+							<a target="_blank" href="https://www.linkedin.com/in/bagas-arisandi-9b3735202/">
+								My LinkedIn
+							</a>
+							<a target="_blank" href="https://www.instagram.com/bagassandih/">
+								My Instagram
+							</a>
+						</div>
+					  </li>
+					<li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="section-container">
+			<div class="judul-web">
+				<img src="https://cdn-icons-png.flaticon.com/512/5132/5132838.png" width="8%">
+				<span id="judul-converter">Celcius to Fahrenheit</span>
+			</div>
+
+			<div class="section-form-container">
+				<div class="form">
+					<div>
+						<form action="javascript:konversi()">
+							<label for="celsius-input">Celsius(°C)</label>
+					</div>
+					<div class="field">
+						<input type="number" id="input-number" placeholder="Masukkan suhu..">
+						<button type="submit">Konversi</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="result">
+					<div>
+						<label for="celsius-input">Fahrenheit(°F)</label>
+					</div>
+					<div class="field">
+						<input type="number" id="input-hasil" value="" placeholder="Hasil konversi.." disabled>
+						<button type="submit" class="reverse" onclick="reverse()">Reverse</button>
+					</div>
+				</div>
+			</div>
+
+			<h3>Petunjuk</h3>
+			<div class="petunjuk">
+				<div id="petunjuk-spinner"></div>
+				<h4 id="judul-hasil"></h4>
+				<p id="teks-hasil"></p>
+				<h4 id="judul-rumus"></h4>
+				<p id="teks-rumus"></p>
+				<p>
+					Klik tombol "Konversi" untuk melakukan konversi suhu, Klik tombol "Reverse" untuk melakukan konversi
+					suhu yang sebaliknya.
+				</p>
+			</div>
+
+		</div>
+	</section>
+
+	<script src="./js/script.js">
+	</script>
+</body>
+
+</html>
