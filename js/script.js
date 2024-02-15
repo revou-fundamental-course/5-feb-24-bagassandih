@@ -1,22 +1,32 @@
+const inputNumber = document.getElementById('input-number');
+const inputHasil = document.getElementById('input-hasil');
+const judulHasil = document.getElementById('judul-hasil');
+const teksHasil = document.getElementById('teks-hasil');
+const judulRumus = document.getElementById('judul-rumus');
+const teksRumus = document.getElementById('teks-rumus');
 let converter = 'celcius';
 
+function reset() {
+	inputNumber.value = '';
+	inputHasil.value = '';
+	judulHasil.innerText = '';
+	teksHasil.innerText = '';
+	judulRumus.innerText = '';
+	teksRumus.innerText = '';
+}
+
 function content() {
-	const inputNumber = document.getElementById('input-number');
-	const inputHasil = document.getElementById('input-hasil');
-	const judulHasil = document.getElementById('judul-hasil');
-	const teksHasil = document.getElementById('teks-hasil');
-	const judulRumus = document.getElementById('judul-rumus');
-	const teksRumus = document.getElementById('teks-rumus');
-	
 	const hasilCeltoFah = ((inputNumber.value * 9/5) + 32).toFixed(2);
 	const hasilFahtoCel = ((inputNumber.value - 32) * 5/9).toFixed(2);
+
+	if (inputNumber.value == '') inputNumber.value = 0;
 	
 	judulHasil.innerText = 'Hasil';
 	judulRumus.innerText = 'Rumus dan Penjelasan';
 	
 	if (converter === 'celcius') {
 		inputHasil.value = hasilCeltoFah;
-		teksHasil.innerHTML = `Hasil konversi dari <i>Celcius ke Fahrenheit</i> diatas adalah ${hasilCeltoFah}.`;
+		teksHasil.innerHTML = `Hasil konversi dari <i>Celcius ke Fahrenheit</i> diatas adalah <b>${hasilCeltoFah}</b>.`;
 		teksRumus.innerText = `°F = (9/5 x °C) + 32`;
 		teksRumus.innerHTML += `
 			<ul>
@@ -27,7 +37,7 @@ function content() {
 		`;
 	} else {
 		inputHasil.value = hasilFahtoCel;
-		teksHasil.innerHTML = `Hasil konversi dari <i>Fahrenheit ke Celcius</i> diatas adalah ${hasilFahtoCel}.`;
+		teksHasil.innerHTML = `Hasil konversi dari <i>Fahrenheit ke Celcius</i> diatas adalah <b>${hasilFahtoCel}</b>.`;
 		teksRumus.innerText = `°C = (°F - 32) x 5/9`;
 		teksRumus.innerHTML += `
 			<ul> 

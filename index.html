@@ -55,8 +55,6 @@
 					</div>
 					<div class="field">
 						<input type="number" id="input-number" placeholder="Masukkan suhu..">
-						<button type="submit">Konversi</button>
-						</form>
 					</div>
 				</div>
 
@@ -66,9 +64,23 @@
 					</div>
 					<div class="field">
 						<input type="number" id="input-hasil" value="" placeholder="Hasil konversi.." disabled>
+					</div>
+				</div>
+
+				<div class="button-container">
+					<div class="field-button">
+						<button type="submit" class="convert">Konversi</button>
+						</form>
+						<button type="submit" class="reset" onclick="reset()">Reset</button>
 						<button type="submit" class="reverse" onclick="reverse()">Reverse</button>
 					</div>
 				</div>
+
+				<!-- <div class="reset">
+					<div class="field">
+						<button type="submit" class="reset" onclick="Reset()">Reset</button>
+					</div>
+				</div> -->
 			</div>
 
 			<h3>Petunjuk</h3>
@@ -79,8 +91,9 @@
 				<h4 id="judul-rumus"></h4>
 				<p id="teks-rumus"></p>
 				<p>
-					Klik tombol "Konversi" untuk melakukan konversi suhu, Klik tombol "Reverse" untuk melakukan konversi
-					suhu yang sebaliknya.
+					Masukkan suhu dengan angka, klik tombol "Konversi" untuk melakukan konversi suhu.
+					Klik tombol "Reverse" untuk melakukan konversi
+					suhu yang sebaliknya. Sedangkat tombol "Reset" untuk melakukan reset dari hasil dan input yang dimasukkan.
 				</p>
 			</div>
 

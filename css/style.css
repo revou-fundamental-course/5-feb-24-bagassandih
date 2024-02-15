@@ -87,7 +87,7 @@ a:hover {
 }
 
 .petunjuk {
-	width: 450px;
+	width: 475px;
 	margin-top: -10px;
 	border: 2px solid #000;
 	border-radius: 15px;
@@ -99,12 +99,9 @@ a:hover {
 	font-size: 20px;
 }
 
-.form {
-	padding: 20px;
-}
 
 button {
-	padding: 5px 15px;
+	padding: 5px 34px;
 	border-radius: 5px;
 	border: 0px;
 	background-color: #F0A500;
@@ -113,15 +110,24 @@ button {
 	transition: background-color 0.5s ease, padding 0.2s ease;
 }
 
-.reverse {
-	padding: 5px 18px;
-}
 
 button:hover {
 	cursor: pointer;
 	color: #F0A500;
 	background-color: #1B1A17;
-	padding: 10px 20px;
+	padding: 10px 37px;
+}
+
+.convert:hover {
+	background-color: #285430;
+}
+
+.reset:hover {
+	background-color: #1B1A17;
+}
+
+.reverse:hover {
+	background-color: #820300;
 }
 
 button:active {
@@ -150,11 +156,21 @@ input[type=number]:focus {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 5px;
+	padding: 5px 30px;
 }
 
+
+.field-button {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5px 30px;
+}
+
+
 .section-form-container {
-	width: 450px;
+	width: 420px;
 	margin-top: 30px;
 	padding: 30px;
 	border: 2px solid #000;
@@ -164,9 +180,6 @@ input[type=number]:focus {
 	font-weight: bold;
 }
 
-.field {
-	width: 320px;
-}
 
 img {
 	mix-blend-mode: multiply;
@@ -215,7 +228,6 @@ img {
 	display: block;
 }
 
-/* Adjustments */
 .box ul li.dropdown:hover .dropbtn {
 	color: #F0A500;
 }
