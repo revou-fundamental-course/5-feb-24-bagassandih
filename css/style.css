@@ -87,11 +87,11 @@ a:hover {
 }
 
 .petunjuk {
-	width: 475px;
+	width: 500px;
 	margin-top: -10px;
 	border: 2px solid #000;
 	border-radius: 15px;
-	padding: 0px 15px;
+	padding: 5px 20px;
 }
 
 .section-container>h3 {
@@ -107,7 +107,7 @@ button {
 	background-color: #F0A500;
 	color: black;
 	font-weight: bold;
-	transition: background-color 0.5s ease, padding 0.2s ease;
+	transition: background-color 0.4s ease, padding 0.2s ease;
 }
 
 
@@ -130,7 +130,7 @@ button:hover {
 	background-color: #820300;
 }
 
-button:active {
+.reverse:active, .reset:active, .convert:active {
 	background-color: white;
 	color: #1B1A17;
 }
